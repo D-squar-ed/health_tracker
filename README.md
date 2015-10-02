@@ -5,5 +5,3 @@
 </p>
 
 <br>
-
-<div style="width: 480px; height: 360px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:480px; height:360px" src="https://www.lucidchart.com/documents/embeddedchart/522cbe04-f68e-4336-99b6-fad69af623b0" id="I73ffG-q8lRz"></iframe></div>
