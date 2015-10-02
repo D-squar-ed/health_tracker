@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  # get 'step_numbers/index'
+  #
+  # get 'step_numbers/show'
+  #
+  # get 'step_numbers/new'
+  #
+  # get 'step_numbers/edit'
+  resources :step_numbers
+  resources :lbs
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
