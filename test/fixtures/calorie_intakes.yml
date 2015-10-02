@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nomnom: 1
+  date: 2015-10-02
+
+two:
+  nomnom: 1
+  date: 2015-10-02
