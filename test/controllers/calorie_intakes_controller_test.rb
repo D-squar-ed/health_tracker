@@ -20,7 +20,7 @@ class CalorieIntakesControllerTest < ActionController::TestCase
     assert_difference('CalorieIntake.count') do
       post :create, calorie_intake: { date: @calorie_intake.date }
     end
-    assert_redirected_to calorie_intakes_path(assigns(:calorie_intake))
+    assert_redirected_to calorie_intake_path(assigns(:calorie_intake))
   end
 
   test "should show calorie_intakes" do
