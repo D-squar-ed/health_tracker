@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-
-  
+  root 'performed_exercises#index'
+  get 'performed_exercises/index'
+  # get 'calorie_intakes/index'
+  # post 'calorie_intakes/create'
+  # patch 'calorie_intakes/update'
+  resources :calorie_intakes
+  resources :exercise_types
   resources :performed_exercises
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
