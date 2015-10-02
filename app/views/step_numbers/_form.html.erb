@@ -1,0 +1,25 @@
+<%= form_for(@step_number) do |f| %>
+  <% if @step_number.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@step_number.errors.count, "error") %> prohibited this step number from being saved:</h2>
+
+      <ul>
+      <% @step_number.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :steps_taken %><br>
+    <%= f.number_field :steps_taken %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.date_select :date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
