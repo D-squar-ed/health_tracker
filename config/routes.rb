@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  root 'performed_exercises#index'
-  get 'performed_exercises/index'
+  get 'dashboard/index'
+  root 'dashboard#index'
+
   # get 'calorie_intakes/index'
   # post 'calorie_intakes/create'
   # patch 'calorie_intakes/update'
