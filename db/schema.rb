@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151002205204) do
+ActiveRecord::Schema.define(version: 20151003214507) do
 
   create_table "calorie_intakes", force: :cascade do |t|
     t.integer  "nomnom"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20151002205204) do
     t.integer  "exercise_type_id"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.integer  "nomnoms_lost"
   end
 
   create_table "exercise_types", force: :cascade do |t|

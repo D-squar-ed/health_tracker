@@ -1,2 +1,16 @@
-<div align="center">
-  <h2>"Putting the 'ko' in Workout"</h2>
+<div id="dashboard" align="center">
+  <h2>"Putting the 'KO' in WorKOut"</h2>
+
+    <h1>Do you even Lift Bro Dashboard</h1>
+
+      <p>Your total number of Nomnoms consumed and Nomnoms lost today is
+      <%= @today.total_nomnoms %> nomnoms</p>
+      <p>Yesterday you lost<%= @yesterday.total_nomnoms %> nomnoms.</p>
+
+        <p id="link"><%= link_to 'Step Numbers', step_numbers_path %></p>
+        <p id="link"><%= link_to 'Exercise Statistics', exercise_statistics_path %></p>
+        <p id="link"><%= link_to 'Nomnoms Lost', nomnoms_lost_path %></p>
+        <p id="link"><%= link_to 'bs', lbs_path %></p>
+        <p id="link"><%= link_to 'Exercise Types', exercise_types_path %></p>
+
+  </div>
