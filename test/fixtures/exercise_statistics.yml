@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  workout: MyString
+  duration: 1
   date: 2015-10-02
   exercise_type_id: 1
 
 two:
-  workout: MyString
+  duration: 1
   date: 2015-10-02
   exercise_type_id: 1

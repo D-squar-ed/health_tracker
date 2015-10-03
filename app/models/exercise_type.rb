@@ -1,3 +1,3 @@
 class ExerciseType < ActiveRecord::Base
-  has_many :performed_exercises
+  has_many :exercise_statistics
 end

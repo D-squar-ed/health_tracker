@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @exercise_statistic.duration %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @exercise_statistic.date %>
+</p>
+
+<p>
+  <strong>Exercise type:</strong>
+  <%= @exercise_statistic.exercise_type_id %>
+</p>
+
+<%= link_to 'Edit', edit_exercise_statistic_path(@exercise_statistic) %> |
+<%= link_to 'Back', exercise_statistics_path %>

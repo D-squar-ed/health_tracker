@@ -11,25 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20151002160901) do
+ActiveRecord::Schema.define(version: 20151002205204) do
 
   create_table "calorie_intakes", force: :cascade do |t|
     t.integer  "nomnom"
-=======
-ActiveRecord::Schema.define(version: 20151002164730) do
-
-  create_table "lbs", force: :cascade do |t|
-    t.integer  "weight"
->>>>>>> doug
     t.date     "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
+  create_table "exercise_statistics", force: :cascade do |t|
+    t.integer  "duration"
+    t.date     "date"
+    t.integer  "exercise_type_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
   create_table "exercise_types", force: :cascade do |t|
     t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "lbs", force: :cascade do |t|
+    t.integer  "weight"
+    t.date     "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -40,13 +47,13 @@ ActiveRecord::Schema.define(version: 20151002164730) do
     t.integer  "exercise_type_id"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
-=======
+  end
+
   create_table "step_numbers", force: :cascade do |t|
     t.integer  "steps_taken"
     t.date     "date"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
->>>>>>> doug
   end
 
 end
