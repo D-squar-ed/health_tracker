@@ -13,18 +13,27 @@
 
   <div class="field">
     <%= f.label :exercise_type_id %><br>
-    <%= f.select :exercise_type_id, options_for_select([["Swimming", 1], ["Sprints", 2],
-    ["Jogging", 3], ["Weight-Lifting", 4], ["Tai Chi", 5], ["Rock-Climbing"]]) %>
+    <%= f.select :exercise_type_id, ([["Swimming", 1], ["Sprints", 2],
+    ["Jogging", 3], ["Weight-Lifting", 4], ["Tai Chi", 5],
+    ["Rock-Climbing", 6]]) %>
   </div>
 
   <div class="field">
     <%= f.label :duration %><br>
     <%= f.number_field :duration %>
   </div>
+
+  <div class="field">
+  <%= f.label :nomnoms_lost %><br>
+  <%= f.number_field :nomnoms_lost %>
+</div>
+
   <div class="field">
     <%= f.label :date %><br>
     <%= f.date_select :date %>
   </div>
+
+
 
   <div class="actions">
     <%= f.submit %>

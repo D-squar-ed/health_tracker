@@ -1,15 +1,16 @@
 class ExerciseStatistic < ActiveRecord::Base
   has_many :exercise_types
-  validates  :exercise_type, presence: true
-  validates :duration, presence: true
-  validates :date, presence: true
 
-  def self.nomnoms_lost (date)
+
+  def nomnoms_lost
     ExerciseType.find(exercise_type_id).nomnoms_lost * duration
   end
 
-  def self.nomnoms_lost_today
-
+  def self.nomnoms_lost(date)
+    nomslost = ExerciseStatistic.where(date: date).reduce(0) do |sum, e|
+       sum += e.nomnoms_lost
+     end
+     #returns absolute value of num
+     nomslost.abs
   end
-
 end
