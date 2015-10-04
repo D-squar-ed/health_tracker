@@ -1,10 +1,10 @@
 class ExerciseType < ActiveRecord::Base
-  belongs_to :exercise_statistic
-  validates :name, uniqueness: true
-
-  def self.all_names
-      self.all.map{ |type| [type.name, type.id] }
-  end
+  has_many :exercise_statistics
+  #validates :name, uniqueness: true
+  #
+  # def self.name
+  #     self.all.map{ |type| [type.name, type.id] }
+  # end
 
 
 end

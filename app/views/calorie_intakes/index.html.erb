@@ -15,7 +15,7 @@
     <% @calorie_intakes.each do |calorie_intake| %>
       <tr>
         <td><%= calorie_intake.nomnom %></td>
-        <td><%= calorie_intake.date %></td>
+        <td><%= calorie_intake.date.strftime("%b %e, %Y") %></td>
         <td><%= link_to 'Show', calorie_intake %></td>
         <td><%= link_to 'Edit', edit_calorie_intake_path(calorie_intake) %></td>
         <td><%= link_to 'Destroy', calorie_intake, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -7,6 +7,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
 exercise_types = ["Swimming","Sprints", "Jogging", "Weight-Lifting",
   "Tai Chi", "Rock-Climbing"]
 
@@ -14,17 +16,18 @@ exercise_types = ["Swimming","Sprints", "Jogging", "Weight-Lifting",
   exercise_types.each do |type|
   ExerciseType.create!(name: type)
 end
-
-# s = ExerciseType.create(name: 'Swimming')
-# a = ExerciseType.create(name: 'Sprints')
-# b = ExerciseType.create(name: 'Jogging')
-# c = ExerciseType.create(name: 'Weight-Lifting')
-# l = ExerciseType.create(name: 'Tai Chi')
-# d = ExerciseType.create(name: 'Rock-Climbing')
+#
+# sw = ExerciseType.create(name: 'Swimming')
+# sp = ExerciseType.create(name: 'Sprints')
+# jo = ExerciseType.create(name: 'Jogging')
+# wl = ExerciseType.create(name: 'Weight-Lifting')
+# tc = ExerciseType.create(name: 'Tai Chi')
+# rc = ExerciseType.create(name: 'Rock-Climbing')
 #
 #
-# ExerciseStatistic.create(duration: 2, exercise_type_id: s.id)
-# ExerciseStatistic.create(duration: 1, exercise_type_id: a.id)
-# ExerciseStatistic.create(duration: 2, exercise_type_id: b.id)
-# ExerciseStatistic.create(duration: 3, exercise_type_id: c.id)
-# ExerciseStatistic.create(duration: 4, exercise_type_id: l.id)
+# ExerciseStatistic.create(duration: 2, date: 2015-10-04, exercise_type_id: sw.id)
+# ExerciseStatistic.create(duration: 1, date: 2015-10-14, exercise_type_id: sp.id)
+# ExerciseStatistic.create(duration: 2, date: 2015-09-12, exercise_type_id: jo.id)
+# ExerciseStatistic.create(duration: 3, date: 2015-10-24, exercise_type_id: wl.id)
+# ExerciseStatistic.create(duration: 4, date: 2015-11-25, exercise_type_id: tc.id)
+# ExerciseStatistic.create(duration: 4, date: 2015-10-04, exercise_type_id: rc.id)
