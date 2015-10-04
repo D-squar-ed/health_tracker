@@ -16,6 +16,8 @@ exercise_types = ["Swimming","Sprints", "Jogging", "Weight-Lifting",
   exercise_types.each do |type|
   ExerciseType.create!(name: type)
 end
+
+
 #
 # sw = ExerciseType.create(name: 'Swimming')
 # sp = ExerciseType.create(name: 'Sprints')

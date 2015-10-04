@@ -9,7 +9,7 @@
       <th>Date</th>
       <th>Nomnoms Lost</th>
       <th>Exercise type</th>
-      <th colspan="4"></th>
+      <th colspan="3"></th>
     </tr>
   </thead>
 
@@ -18,7 +18,7 @@
       <tr>
         <td><%= es.duration %></td>
         <td><%= es.date.strftime("%b %e, %Y")%></td>
-        <td><%= es.nomnoms_lost %></td>
+        <td><%= es.nomnoms_lost.to_i %></td>
         <td><%= es.exercise_type.name %></td>
         <td><%= link_to 'Show', es %></td>
         <td><%= link_to 'Edit', edit_exercise_statistic_path(es) %></td>

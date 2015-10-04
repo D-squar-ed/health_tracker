@@ -2,7 +2,7 @@ class ExerciseStatisticsController < ApplicationController
   before_action :set_exercise_statistic, only: [:show, :edit, :update, :destroy]
 
   def index
-    @exercise_statistics = ExerciseStatistic.all
+    @exercise_statistics = ExerciseStatistic.all.order(:date)
   end
 
   def show
