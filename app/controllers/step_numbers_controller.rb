@@ -47,6 +47,10 @@ class StepNumbersController < ApplicationController
       @step_number = StepNumber.find(params[:id])
     end
 
+    def set_statistics
+      @steps_count = StepNumber.steps_count
+    end
+
     # Only allow a trusted parameter "white list" through.
     def step_number_params
       params.require(:step_number).permit(:steps_taken, :date)
