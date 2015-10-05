@@ -9,7 +9,10 @@ class Lb < ActiveRecord::Base
   end
 
   def self.lb_avg
+
+    return 0 if count_this_week == 0
     @lb_avg = (Lb.sum(:weight))/count_this_week
+
   end
 
 end
