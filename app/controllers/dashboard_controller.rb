@@ -1,7 +1,6 @@
 class DashboardController < ApplicationController
 
   def index
-    @steps_count = StepNumber.steps_count
 
     @calorie_intake = CalorieIntake.new
     @exercise_statistic = ExerciseStatistic.new
@@ -13,7 +12,8 @@ class DashboardController < ApplicationController
     @nomnom_today = CalorieIntake.consumed(Date.today)
     @lost_today = ExerciseStatistic.nomnoms_lost(Date.today)
     @intake_amounts = CalorieIntake.all.order(:date)
-    @daily_intake = CalorieIntake.daily_intake
+    @lost_today = CalorieIntake.daily_intake
+    
   end
 
 end

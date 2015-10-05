@@ -4,7 +4,6 @@ class ExerciseType < ActiveRecord::Base
   #
   # def self.name
   #     self.all.map{ |type| [type.name, type.id] }
-  # end
-
+  # en
 
 end
