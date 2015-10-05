@@ -47,7 +47,7 @@ class StepNumbersController < ApplicationController
       @step_number = StepNumber.find(params[:id])
     end
 
-    def set_statistics
+    def set_steps_statistics
       @steps_count = StepNumber.steps_count
     end
 

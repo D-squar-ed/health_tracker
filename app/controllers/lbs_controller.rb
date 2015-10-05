@@ -51,6 +51,10 @@ class LbsController < ApplicationController
       @lb = Lb.find(params[:id])
     end
 
+    def set_lb_statistics
+      @lb_avg = Lb.lb_avg
+    end
+
     # Only allow a trusted parameter "white list" through.
     def lb_params
       params.require(:lb).permit(:weight, :date)
