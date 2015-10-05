@@ -1,15 +1,13 @@
 class CalorieIntake < ActiveRecord::Base
 
   def self.consumed (date)
-    cic = CalorieIntake.where(date: date).reduce(0) do |sum, c|
-      sum += c.number
-    end
-    cic.abs
+    cic = CalorieIntake.where(date: date)
+    cic.sum('nomnom')
   end
 
   def self.daily_intake
     today = self.all.select{|s| s.date.day == DateTime.now.day}
-    today.reduce(0){|sum, s| sum + s.calorie_intake}.to_f
+    today.sum('nomnom')
   end
 
   def self.net_nomnoms

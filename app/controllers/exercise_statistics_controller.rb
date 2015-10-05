@@ -47,6 +47,6 @@ class ExerciseStatisticsController < ApplicationController
     end
 
     def exercise_statistic_params
-      params.require(:exercise_statistic).permit(:duration, :date, :exercise_type_id)
+      params.require(:exercise_statistic).permit(:duration, :date, :nomnoms_lost, :exercise_type_id)
     end
 end
