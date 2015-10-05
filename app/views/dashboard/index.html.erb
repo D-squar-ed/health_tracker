@@ -6,6 +6,7 @@
       <%= @today.total_nomnoms %> nomnoms</p>
       <p>Yesterday you lost <%= @yesterday.total_nomnoms %> nomnoms.</p>
       <%= render "steps" %>
+      <%= render "lbs"
 
 
       <p id="link"><%= link_to 'Exercise Statistics', exercise_statistics_path %></p>

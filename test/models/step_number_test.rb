@@ -5,12 +5,12 @@ class StepNumberTest < ActiveSupport::TestCase
     assert_equal("StepNumber.steps_taken") do
       StepNumber.create!(steps_taken: 200)
     end
-
     # StepNumber.sum(:steps_taken)
 
     # assert_no_difference("StepNumber.count_this_month") do
     #   StepNumber.create!(collector: "AMason", amount: -200, created_at: Time.now - 1.month)
     # end
+
   end
 
 
