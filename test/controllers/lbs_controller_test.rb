@@ -18,6 +18,7 @@ class LbsControllerTest < ActionController::TestCase
 
   test "should create lb" do
     assert_difference('Lb.count') do
+      @lb.date = Time.now.strftime("%Y-%m-%d")
       post :create, lb: { date: @lb.date, weight: @lb.weight }
     end
 
@@ -44,6 +45,6 @@ class LbsControllerTest < ActionController::TestCase
       delete :destroy, id: @lb
     end
 
-    assert_redirected_to lbs_path
+    assert_redirected_to lb_path
   end
 end
