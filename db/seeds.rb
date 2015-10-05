@@ -43,4 +43,3 @@ end
 # ExerciseStatistic.create(duration: 3, date: 2015-10-24, exercise_type_id: wl.id)
 # ExerciseStatistic.create(duration: 4, date: 2015-11-25, exercise_type_id: tc.id)
 # ExerciseStatistic.create(duration: 4, date: 2015-10-04, exercise_type_id: rc.id)
->>>>>>> damenate
